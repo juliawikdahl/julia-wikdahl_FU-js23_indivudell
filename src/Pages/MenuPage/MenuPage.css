@@ -1,0 +1,31 @@
+.menu-title {
+    text-align: center; 
+  }
+  
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-to-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+.item-info {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .item-title-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  

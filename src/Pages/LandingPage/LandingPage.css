@@ -1,0 +1,19 @@
+.landing-page {
+    background-image: url('../../assets/LandingPage.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(50, 118, 76, 0.948);
+    color: white;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer;
+  }

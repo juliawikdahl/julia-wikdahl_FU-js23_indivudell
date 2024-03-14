@@ -1,0 +1,26 @@
+.order-status-page {
+    display: flex;
+    justify-content: center;
+   text-align: center;
+   background-color: rgb(229, 114, 76);
+   min-height: 100vh;
+   color: white;
+   font-size: 20px;
+}
+.order-info {
+    margin-top: 5rem;
+}
+.order-info img {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cool-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3rem;
+    cursor: pointer;
+}

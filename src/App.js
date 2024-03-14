@@ -1,24 +1,64 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './Pages/LandingPage/LandingPage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import MenuPage from './Pages/MenuPage/MenuPage';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
+import OrderStatusPage from './Pages/OrderStatusPage/OrderStatusPage';
+import NavBar from './components/NavigationBar/NavigationBar';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route
+            path="/about"
+            element={
+              <>
+                <NavBar /> 
+                <div className="page-content page-beige-background">
+                  <AboutPage />
+                </div>    
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/menu"
+            element={
+              <>
+                <NavBar /> 
+                <div className="page-content page-beige-background">
+                  <MenuPage />
+                </div>
+                <Footer />
+              </>
+            }
+          />
+           <Route
+            path="/profile"
+            element={
+              <>
+                <NavBar /> 
+                <div className="page-content page-black-background">
+                  <ProfilePage />
+                </div>
+            
+              </>
+            }
+          />
+  
+            <Route path="/" element={<LandingPage />} />
+          
+          <Route path="/orderstatus" element={<OrderStatusPage />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
